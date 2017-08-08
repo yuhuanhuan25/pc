@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/swiper.css"/>
+    <style>
+
+        .hero-3d{
+            width: 120px;
+            height: 220px;
+            perspective: 2000px;
+            margin-left: 350px;
+            margin-top: 71px;
+        }
+        .hero-3d-bg{
+            height: 470px;
+            width: 873px;
+            background: url("img/1450867521652.jpg") no-repeat;
+            background-size: cover;
+            overflow: hidden;
+            position: relative;
+            margin-top: 1px;
+        }
+        .hero-3d-bg2{
+            position: absolute;
+            background: rgba(0,0,0,0.6);
+            height: 470px;
+            width: 873px;
+        }
+        .hero-3d ul{
+            width: 120px;
+            height: 220px;
+            transform-style: preserve-3d;
+            position: relative;
+            animation: moveX 15s 2s infinite both;
+        }
+        .hero-3d ul li{
+
+            width: 120px;
+            height: 220px;
+            background-size: cover;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+        }
+        .hero-3d ul li:nth-child(1){
+            background-image: url('img/728da9773912b31b6accd0948118367adbb4e1ef_r2_c2.jpg');
+        }
+        .hero-3d ul li:nth-child(2){
+            background-image: url('img/2_r2_c1.jpg');
+        }
+        .hero-3d ul li:nth-child(3){
+            background-image: url('img/7_r2_c1.jpg');
+        }
+        .hero-3d ul li:nth-child(4){
+            background-image: url('img/584_2016031495454743_r1_c1.png');
+        }
+        .hero-3d ul li:nth-child(5){
+            background-image: url('img/584_2016031495454743_r1_c2.png');
+        }
+        .hero-3d ul li:nth-child(6){
+            background-image: url('img/584_2016031495454743_r1_c3.png');
+        }
+        .hero-3d ul li:nth-child(7){
+            background-image: url('img/1462429307997006_r2_c2.png');
+        }
+        .hero-3d ul li:nth-child(8){
+            background-image: url('img/20151120044602816_r2_c2.jpg');
+        }
+        .hero-3d ul li:nth-child(9){
+            background-image: url('img/20160902051509342_r2_c1.jpg');
+        }
+        .hero-3d ul li:nth-child(10){
+            background-image: url('img/e87de75f5d274c1fbf47f9c632495fe0_th_r1_c2.jpg');
+        }
+        .hero-3d ul li:nth-child(11){
+            background-image: url('img/u=2066233642,4123224825&fm=214&gp=0_r1_c1.jpg');
+        }
+        .hero-3d ul li:nth-child(12){
+            background-image: url('img/u=2066233642,4123224825&fm=214&gp=0_r1_c2.jpg');
+        }
+
+        @keyframes moveX {
+            0%{
+                transform: rotateY(0deg);
+            }
+            8%{
+                transform: rotateY(30deg);
+            }
+            16.2%{
+                transform: rotateY(60deg);
+            }
+            24.6%{
+                transform: rotateY(90deg);
+            }
+            32.9%{
+                transform: rotateY(120deg);
+            }
+            41.5%{
+                transform: rotateY(150deg);
+            }
+            50%{
+                transform: rotateY(180deg);
+            }
+            58%{
+                transform: rotateY(210deg);
+            }
+            67%{
+                transform: rotateY(240deg);
+            }
+            75.5%{
+                transform: rotateY(270deg);
+            }
+            84%{
+                transform: rotateY(300deg);
+            }
+            92%{
+                transform: rotateY(330deg);
+            }
+            100%{
+                transform: rotateY(360deg);
+            }
+        }
+        .hero-3d-footer{
+            position: absolute;
+            top: 120px;
+            left: -400px;
+            border-radius: 50%;
+            width: 1000px;
+            height: 1000px;
+            background: radial-gradient(500px 500px at center,#111866,rgba(0,0,0,0.8) );
+            background: -webkit-radial-gradient(500px 500px at center,#111866,rgba(0,0,0,0.8) );
+            transform: rotateX(90deg) translateZ(300px);
+        }
+
+    </style>
+</head>
+<body>
+<div class='top-t'>
+    <div class="top-t-cen">
+        <div class="tengxun-game"></div>
+        <div class="five-year"><img src="img/1121126556686380872150034523423040.1500345236.a4a07e6f91dfa49134a116dc52ae59a9.jpg" alt=""/></div>
+        <div class='top-t-right'>
+            <img class="top-img" src="img/logo.png" alt=""/>
+            <span>成长守护平台&nbsp;</span> <a href="">腾讯游戏排行榜</a>
+            <img src="img/下载.png" alt=""/>
+        </div>
+    </div>
+</div>
+<div class='nav-top' id="nav-top">
+    <div class='nav-top-js' id="nav-top-js">
+        <div class='nav-top-js-con'>
+            <ul>
+                <li><a href="">版本介绍</a></li>
+                <li><a href="">游戏介绍</a></li>
+                <li><a href="">英雄资料</a></li>
+                <li><a href="">故事站</a></li>
+                <li><a href="">游戏壁纸</a></li>
+            </ul>
+            <ul>
+                <li><a href="">攻略中心</a></li>
+                <li><a href="">英雄攻略</a></li>
+                <li><a href="">视频中心</a></li>
+
+            </ul>
+            <ul>
+                <li><a href="">KLP职业联赛</a></li>
+                <li><a href="">KOC王者城市赛</a></li>
+                <li><a href="">QGC夏季联赛</a></li>
+                <li><a href="">TGA大奖赛</a></li>
+                <li><a href="">WGC精英赛</a></li>
+                <li><a href="">王者高校赛</a></li>
+            </ul>
+            <ul>
+                <li><a href="">官方助手</a></li>
+                <li><a href="">手Q部落</a></li>
+                <li><a href="">微信圈子</a></li>
+                <li><a href="">官方微博</a></li>
+                <li><a href="">微信公众号</a></li>
+                <li><a href="">手Q订阅号</a></li>
+            </ul>
+            <ul>
+                <li><a href="">客服专区</a></li>
+                <li><a href="">礼包兑换</a></li>
+                <li><a href="">自助服务</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="nav-logo"><img src="img/logo (1).png" alt=""/></div>
+    <ul>
+        <li><a href="javascript:;"><span>网站首页</span><p>HOME</p></a></li>
+        <li><a href="javascript:;"><span>游戏资料</span><p>DATA</p></a></li>
+        <li><a href="javascript:;"><span>攻略中心</span><p>RAIDES</p></a></li>
+        <li><a href="javascript:;"><span>赛事中心</span><p>MATCH</p></a></li>
+        <li><a href="javascript:;"><span>社区互动</span><p>CUMMUNITY</p></a></li>
+        <li><a href="javascript:;"><span>玩家支持</span><p>PLAYER</p></a></li>
+    </ul>
+    <div class="nav-top-img">
+        <img src="img/下载 (1).png" alt=""/>
+    </div>
+    <div class="nav-logo-r">
+
+        <span>欢迎登陆</span>
+        <p>登陆后直接查看游戏战绩</p>
+    </div>
+</div>
+<div class="content">
+
+    <div class="content-all">
+        <div class="content-all-top">
+            <div class="swiper-container">
+            <div class="swiper-wrapper" id="banner">
+                <div class="swiper-slide"><img src="img/1500363460.jpg" alt=""/></div>
+                <div class="swiper-slide"><img src="img/1500342935.jpg" alt=""/></div>
+                <div class="swiper-slide"><img src="img/1500346775.jpg" alt=""/></div>
+                <div class="swiper-slide"><img src="img/1500346955.jpg" alt=""/></div>
+                <div class="swiper-slide"><img src="img/1500271896.jpg" alt=""/></div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+
+            <!-- 如果需要导航按钮 -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- 如果需要滚动条 -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+
+            <ul id="uls">
+                <li class="on">破灭刀锋-铠</li>
+                <li>魔与道之刃</li>
+                <li>赏金赛制解读</li>
+                <li>王者百科</li>
+            </ul>
+
+
+             <div class="news" id="news">
+            <ul class="title" id="title">
+                <li class="title-on">全部</li>
+                <li>新闻</li>
+                <li>公告</li>
+                <li>活动</li>
+                <li>赛事</li>
+            </ul>
+            <div class="cont-one dis-blo">
+                <p class="cont-one-top">王者荣耀首届创新大赛获奖名单</p>
+                <ul class="cont-one-con">
+                    <li><a href="">7月15日雪碧王者英雄瓶正式上线，清凉...</a><span>07/14</span></li>
+                    <li><a href="">7月15日雪碧王者正式上线，清凉...</a><span>07/14</span></li>
+                    <li><a href="">7月15日雪碧王者英雄瓶正式上线，清凉...</a><span>07/14</span></li>
+                    <li><a href="">7月15日雪碧王英雄瓶正式上线，清凉...</a><span>07/14</span></li>
+                    <li><a href="">7月15日雪碧王者英雄瓶正式上线，清凉...</a><span>07/14</span></li>
+                    <li><a href="">7月15王者英雄瓶正式上线，清凉...</a><span>07/14</span></li>
+                    <li><a href="">7月15日雪碧王者英雄瓶正式上线，清凉...</a><span>07/14</span></li>
+                </ul>
+            </div>
+            <div class="cont-one">
+                <p class="cont-one-top">王者荣耀</p>
+                <ul class="cont-one-con">
+                    <li><a href="">雪碧王者英雄瓶正式上线，清凉...</a><span>07/14</span></li>
+                    <li><a href="">7月15日雪碧王者正式上线，清凉...</a><span>07/14</span></li>
+                    <li><a href="">7月雪碧王者英雄瓶正式上线，清凉...</a><span>07/14</span></li>
+                    <li><a href="">7月15日雪碧王英雄瓶正式上线，清凉...</a><span>07/14</span></li>
+                    <li><a href="">15日雪碧王者英雄瓶正式上线，清凉...</a><span>07/14</span></li>
+                    <li><a href="">7月15王者英雄瓶正式上线，清凉...</a><span>07/14</span></li>
+                    <li><a href="">7月15日英雄瓶正式上线，清凉...</a><span>07/14</span></li>
+                </ul>
+            </div>
+            <div class="cont-one">
+                <p class="cont-one-top">首届创新大赛获奖名单</p>
+                <ul class="cont-one-con">
+                    <li><a href="">7月15日雪碧王者英雄瓶正式上线，清凉...</a><span>07/14</span></li>
+                    <li><a href="">雪碧王者正式上线，清凉...</a><span>07/14</span></li>
+                    <li><a href="">雪碧王者英雄瓶正式上线，清凉...</a><span>07/14</span></li>
+                    <li><a href="">7月15日雪碧王英雄瓶正式上线，清凉...</a><span>07/14</span></li>
+                    <li><a href="">雪碧王者英雄瓶正式上线，清凉...</a><span>07/14</span></li>
+                    <li><a href="">7月15王者英雄瓶正式上线，清凉...</a><span>07/14</span></li>
+                    <li><a href="">7月15日雪碧王者英雄瓶正式上线，清凉...</a><span>07/14</span></li>
+                </ul>
+            </div>
+            <div class="cont-one">
+                <p class="cont-one-top">创新大赛获奖名单</p>
+                <ul class="cont-one-con">
+                    <li><a href="">7月15日雪碧王者英雄瓶正式上线，清凉...</a><span>07/14</span></li>
+                    <li><a href="">7月15日雪碧王者正式上线，清凉...</a><span>07/14</span></li>
+                    <li><a href="">王者英雄瓶正式上线，清凉...</a><span>07/14</span></li>
+                    <li><a href="">7月15日雪碧王英雄瓶正式上线，清凉...</a><span>07/14</span></li>
+                    <li><a href="">7月15日雪碧王者英雄瓶正式上线，清凉...</a><span>07/14</span></li>
+                    <li><a href="">英雄瓶正式上线，清凉...</a><span>07/14</span></li>
+                    <li><a href="">7月15日雪碧王者英雄瓶正式上线，清凉...</a><span>07/14</span></li>
+                </ul>
+            </div>
+            <div class="cont-one">
+                <p class="cont-one-top">获奖名单</p>
+                <ul class="cont-one-con">
+                    <li><a href="">王者英雄瓶正式上线，清凉...</a><span>07/14</span></li>
+                    <li><a href="">7月15日雪碧王者正式上线，清凉...</a><span>07/14</span></li>
+                    <li><a href="">王者英雄瓶正式上线，清凉...</a><span>07/14</span></li>
+                    <li><a href="">7月15日雪碧王英雄瓶正式上线，清凉...</a><span>07/14</span></li>
+                    <li><a href="">7月15日雪碧王者英雄瓶正式上线，清凉...</a><span>07/14</span></li>
+                    <li><a href="">7月15王者英雄瓶正式上线，清凉...</a><span>07/14</span></li>
+                    <li><a href="">7月15日雪碧王者英雄瓶正式上线，清凉...</a><span>07/14</span></li>
+                </ul>
+            </div>
+
+
+        </div>
+
+
+            <div class="news-r">
+            <div class="news-r-one"></div>
+            <div class="news-r-two"></div>
+            <div class="news-r-three"></div>
+        </div>
+        </div>
+
+
+        <div class="content-footer">
+            <div class="content-footer-one"><img src="img/83940438348103.jpg" alt=""/></div>
+            <div class="content-footer-two"><img src="img/78426911482391.jpg" alt=""/></div>
+            <div class="content-footer-three"><img src="img/quick-link-3.jpg" alt=""/></div>
+            <div class="content-footer-four"><img src="img/85637835371042.jpg" alt=""/></div>
+        </div>
+    </div>
+</div>
+<div class="content-all-small">
+
+    <div class="content-all-one">
+        <div class="gongliu">
+        <div class="gongliu-one">
+        <p><img src="img/王者官网.fw_r2_c2.png" alt=""/><span>攻略中心</span><em>更多>></em></p>
+        <div class="content-all-small-nav">
+            <ul>
+                <li><a href="">英雄攻略</a></li>
+                <li><a href="">赛事精品</a></li>
+                <li><a href="">精品栏目</a></li>
+            </ul>
+        </div>
+        </div>
+        <div class="hero-3d-bg">
+        <div class="hero-3d-bg2">
+        <div class="content-all-small-nav-two" id="show">
+
+            <ul>
+                <li id="diankai"><a href="">最新</a></li>
+                <li><a href="">零度带你飞</a></li>
+                <li><a href="">荣耀进行时</a></li>
+                <li><a href="">王者职业教学</a></li>
+                <li><a href="">谁是国服第一</a></li>
+                <li><a href="">赛事周刊</a></li>
+                <li><a href="">我来Carry</a></li>
+                <li><a href="">主宰猎人</a></li>
+            </ul>
+            <div class="flash" id='flash'>
+                <div class="flash-all">
+                    <img src="img/150.jpg" alt=""/>
+                    <img src="img/152.jpg" alt=""/>
+                    <img src="img/153.jpg" alt=""/>
+                    <img src="img/166.jpg" alt=""/>
+                    <img src="img/167.jpg" alt=""/>
+                    <img src="img/169.jpg" alt=""/>
+                </div>
+            </div>
+        </div>
+        <div class="hero-3d">
+            <div class="hero-3d-footer"></div>
+            <ul id="uls-3d">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        </div>
+        </div>
+    </div>
+        <div class='gongliu-r'>
+        <div class="gongliu-r-two">
+        <p><img src="img/王者官网.fw_r2_c2.png" alt=""/><span>攻略中心</span><em>更多>></em></p>
+        <div class="content-all-small-nav-r">
+            <ul>
+                <li><a href="">英雄攻略</a></li>
+                <li><a href="">赛事精品</a></li>
+                <li><a href="">精品栏目</a></li>
+            </ul>
+        </div>
+        </div>
+        <div class="gongliu-r-img">
+            <img src="img/193.jpg" alt=""/>
+        </div>
+        <div class="gongliu-r-img-new">
+            <h3>新英雄：铠</h3><span>上线时间：2017-7-18</span>
+        </div>
+        <div class='gongliu-r-img-new-3d'>
+            <ul>
+                <li>
+                    <img src="img/189_skin.jpg" alt="" class="more-hero-one"/>
+                    <img src="img/more_hero.jpg" alt="" class="more-hero-two"/>
+                </li>
+                </ul>
+                <ul>
+                <li>
+                    <img src="img/180.jpg" alt="" class="more-hero-one"/>
+                    <img src="img/more_hero.jpg" alt="" class="more-hero-two"/>
+                </li>
+                </ul>
+                <ul>
+                <li>
+                    <img src="img/182.jpg" alt="" class="more-hero-one"/>
+                    <img src="img/more_hero.jpg" alt="" class="more-hero-two"/>
+                </li>
+                </ul>
+                <ul>
+                <li>
+                    <img src="img/187.jpg" alt="" class="more-hero-one"/>
+                    <img src="img/more_hero.jpg" alt="" class="more-hero-two"/>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    <div class="content-choose-all">
+        <div class='content-choose'>
+        <div class="gongliu-one">
+            <p><img src="img/王者官网.fw_r2_c2.png" alt=""/><span>赛事中心</span><em>更多>></em></p>
+            <div class="content-all-small-nav-p">
+                <ul id="ulsChoose">
+                    <li><a href="">英雄攻略</a></li>
+                    <li><a href="">赛事精品</a></li>
+                    <li><a href="">精品栏目</a></li>
+                    <li><a href="">赛事精品</a></li>
+                    <li><a href="">精品栏目</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="content-choose-1" id="cont-choose">
+            <dl>
+            <dt class="content-choose-2-on">
+                <div class="p-one"><img src="img/92031265253873.jpg" alt=""/></div>
+                <div class="p-two">
+                    <div class="p-three-title">
+                        <p>冠军杯巡礼：AG超玩会稳中求胜</p>
+                        <span>冠军杯巡礼：AG超玩会稳中求胜</span>
+                    </div>
+                    <ul>
+                        <li><span>分析</span><a href="">《王者荣耀》WGC微信精英赛五月月赛将于5月24日16:00正式拉开战幕，参加此次月赛的队伍共有四支，分别是【AT天糖糖糖】、【Rosefinch】、【非常低调】以及【我们放学了】。四支队伍的实力都非常的出色，相信经过周赛的洗礼后实力定然更进一步，那么五月月赛的巅峰对决究竟谁能脱颖而出呢，就让我们在WGC精英赛五月月赛见分晓吧！：带你一分钟读懂</a><b>07/17</b></li>
+                        <li><span>分析</span><a href="">那么五月月赛的巅峰对决究竟谁能脱颖而出呢，就让我们在WGC精英赛五月月赛见分晓吧！</a><b>07/17</b></li>
+                        <li><span>分析</span><a href="">《王者荣耀》WGC微信精英赛五月月赛将于5月24日16:00正式拉开战幕，参加此次月赛的队伍共有四支</a><b>07/17</b></li>
+                        <li><span>分析</span><a href="">那么五月月赛的巅峰对决究竟谁能脱颖而出呢</a><b>07/17</b></li>
+                        <li><span>分析</span><a href="">《王者荣耀》WGC微信精英赛五月月赛将于5月24日16:00正式拉开战幕，参加此次月赛的队伍共有四支</a><b>07/17</b></li>
+                        <li><span>分析</span><a href="">那么五月月赛的巅峰对决究竟谁能脱颖而出呢</a><b>07/17</b></li>
+                    </ul>
+                </div>
+            </dt>
+            <dt>
+                <div class="p-one"><img src="img/u=2066233642,4123224825&fm=214&gp=0_r1_c1.jpg" alt=""/></div>
+                <div class="p-two">
+                    <div class="p-three-title">
+                        <p>冠军杯巡礼：AG超玩会稳中求胜</p>
+                        <span>冠军杯巡礼：AG超玩会稳中求胜</span>
+                    </div>
+                    <ul>
+                        <li><span>分析</span><a href="">《王者荣耀》WGC微信精英赛五月月赛将于5月24日16:00正式拉开战幕，参加此次月赛的队伍共有四支，分别是【AT天糖糖糖】、【Rosefinch】、【非常低调】以及【我们放学了】。四支队伍的实力都非常的出色，相信经过周赛的洗礼后实力定然更进一步，那么五月月赛的巅峰对决究竟谁能脱颖而出呢，就让我们在WGC精英赛五月月赛见分晓吧！：带你一分钟读懂</a><b>07/17</b></li>
+
+                        <li><span>分析</span><a href="">《王者荣耀》WGC微信精英赛五月月赛将于5月24日16:00正式拉开战幕，参加此次月赛的队伍共有四支</a><b>07/17</b></li>
+                        <li><span>分析</span><a href="">那么五月月赛的巅峰对决究竟谁能脱颖而出呢</a><b>07/17</b></li>
+                        <li><span>分析</span><a href="">《王者荣耀》WGC微信精英赛五月月赛将于5月24日16:00正式拉开战幕，参加此次月赛的队伍共有四支</a><b>07/17</b></li>
+                        <li><span>分析</span><a href="">那么五月月赛的巅峰对决究竟谁能脱颖而出呢</a><b>07/17</b></li>
+                    </ul>
+                </div>
+            </dt>
+            <dt>
+                <div class="p-one"><img src="img/20160902051509342_r2_c1.jpg" alt=""/></div>
+                <div class="p-two">
+                    <div class="p-three-title">
+                        <p>AG超玩会稳中求胜</p>
+                        <span>冠军杯巡礼：AG超玩会稳中求胜</span>
+                    </div>
+                    <ul>
+                        <li><span>分析</span><a href="">《王者荣耀》WGC微信精英赛五月月赛将于5月24日16:00正式拉开战幕，参加此次月赛的队伍共有四支，分别是【AT天糖糖糖】、【Rosefinch】、【非常低调】以及【我们放学了】。四支队伍的实力都非常的出色，相信经过周赛的洗礼后实力定然更进一步，那么五月月赛的巅峰对决究竟谁能脱颖而出呢，就让我们在WGC精英赛五月月赛见分晓吧！：带你一分钟读懂</a><b>07/17</b></li>
+                        <li><span>分析</span><a href="">那么五月月赛的巅峰对决究竟谁能脱颖而出呢，就让我们在WGC精英赛五月月赛见分晓吧！</a><b>07/17</b></li>
+                        <li><span>分析</span><a href="">《王者荣耀》WGC微信精英赛五月月赛将于5月24日16:00正式拉开战幕，参加此次月赛的队伍共有四支</a><b>07/17</b></li>
+                        <li><span>分析</span><a href="">那么五月月赛的巅峰对决究竟谁能脱颖而出呢</a><b>07/17</b></li>
+                        <li><span>分析</span><a href="">《王者荣耀》WGC微信精英赛五月月赛将于5月24日16:00正式拉开战幕，参加此次月赛的队伍共有四支</a><b>07/17</b></li>
+                        <li><span>分析</span><a href="">那么五月月赛的巅峰对决究竟谁能脱颖而出呢</a><b>07/17</b></li>
+                    </ul>
+                </div>
+            </dt>
+            <dt>
+                <div class="p-one"><img src="img/728da9773912b31b6accd0948118367adbb4e1ef_r2_c2.jpg" alt=""/></div>
+                <div class="p-two">
+                    <div class="p-three-title">
+                        <p>冠军杯巡礼：AG超玩会稳中求胜</p>
+                        <span>冠军杯巡礼</span>
+                    </div>
+                    <ul>
+                        <li><span>分析</span><a href="">《王者荣耀》WGC微信精英赛五月月赛将于5月24日16:00正式拉开战幕，参加此次月赛的队伍共有四支，分别是【AT天糖糖糖】、【Rosefinch】、【非常低调】以及【我们放学了】。四支队伍的实力都非常的出色，相信经过周赛的洗礼后实力定然更进一步，那么五月月赛的巅峰对决究竟谁能脱颖而出呢，就让我们在WGC精英赛五月月赛见分晓吧！：带你一分钟读懂</a><b>07/17</b></li>
+                        <li><span>分析</span><a href="">那么五月月赛的巅峰对决究竟谁能脱颖而出呢，就让我们在WGC精英赛五月月赛见分晓吧！</a><b>07/17</b></li>
+                        <li><span>分析</span><a href="">《王者荣耀》WGC微信精英赛五月月赛将于5月24日16:00正式拉开战幕，参加此次月赛的队伍共有四支</a><b>07/17</b></li>
+                        <li><span>分析</span><a href="">那么五月月赛的巅峰对决究竟谁能脱颖而出呢</a><b>07/17</b></li>
+
+                    </ul>
+                </div>
+            </dt>
+            <dt>
+                <div class="p-one"><img src="img/584_2016031495454743_r1_c3.png" alt=""/></div>
+                <div class="p-two">
+                    <div class="p-three-title">
+                        <p>冠军杯巡礼：AG超玩会稳中求胜</p>
+                        <span>冠军杯巡礼：AG超玩会稳中求胜</span>
+                    </div>
+                    <ul>
+                        <li><span>分析</span><a href="">《王者荣耀》WGC微信精英赛五月月赛将于5月24日16:00正式拉开战幕，参加此次月赛的队伍共有四支，分别是【AT天糖糖糖】、【Rosefinch】、【非常低调】以及【我们放学了】。四支队伍的实力都非常的出色，相信经过周赛的洗礼后实力定然更进一步，那么五月月赛的巅峰对决究竟谁能脱颖而出呢，就让我们在WGC精英赛五月月赛见分晓吧！：带你一分钟读懂</a><b>07/17</b></li>
+                        <li><span>分析</span><a href="">那么五月月赛的巅峰对决究竟谁能脱颖而出呢，就让我们在WGC精英赛五月月赛见分晓吧！</a><b>07/17</b></li>
+                        <li><span>分析</span><a href="">《王者荣耀》WGC微信精英赛五月月赛将于5月24日16:00正式拉开战幕，参加此次月赛的队伍共有四支</a><b>07/17</b></li>
+                        <li><span>分析</span><a href="">那么五月月赛的巅峰对决究竟谁能脱颖而出呢</a><b>07/17</b></li>
+                        <li><span>分析</span><a href="">《王者荣耀》WGC微信精英赛五月月赛将于5月24日16:00正式拉开战幕，参加此次月赛的队伍共有四支</a><b>07/17</b></li>
+                        <li><span>分析</span><a href="">那么五月月赛的巅峰对决究竟谁能脱颖而出呢</a><b>07/17</b></li>
+
+                    </ul>
+                </div>
+            </dt>
+            </dl>
+        </div>
+        <div class="content-choose-l-footer" id="content-choose-l-footer">
+            <dl id="video-js">
+                <dt>
+                    <video src="img/mov_bbb.mp4" controls></video><p><em></em></p>
+                    <!--<img src="img/下载 (1).jpg"><p class="autoplayP"><em></em></p>-->
+                </dt>
+                <dd>【广东】王者荣耀城市赛省赛</dd>
+            </dl>
+            <dl>
+                <!--<dt><img src="img/下载 (5).jpg"><p><em></em></p></dt>-->
+                <dt>
+                <video src="img/mov_bbb.mp4" controls></video><p><em></em></p>
+                </dt>
+                <dd>【王者城市赛】成都站冠军赛 DG VS GCK 第一场</dd>
+            </dl>
+            <dl>
+                <dt>
+                    <video src="img/mov_bbb.mp4" controls></video><p><em></em></p>
+                <!--<img src="img/下载 (1).jpg"><p class="autoplayP"><em></em></p>-->
+                </dt>
+                <dd>【王者城市赛】史诗级方言RAP对唱《王者Flow》</dd>
+            </dl>
+            <dl>
+                <dt>
+                    <video src="img/mov_bbb.mp4" controls></video><p><em></em></p>
+                <!--<img src="img/下载 (1).jpg"><p class="autoplayP"><em></em></p>-->
+                </dt>
+                <dd>【王者城市赛】成都站四强 DG VS YTG 第一场</dd>
+            </dl>
+            <dl>
+                <dt>
+                    <video src="img/mov_bbb.mp4" controls></video><p><em></em></p>
+                <!--<img src="img/下载 (1).jpg"><p class="autoplayP"><em></em></p>-->
+                </dt>
+                <dd>【广东】王者荣耀城市赛省赛</dd>
+            </dl>
+            <dl>
+                <dt>
+                    <video src="img/mov_bbb.mp4" controls></video><p><em></em></p>
+                <!--<img src="img/下载 (1).jpg"><p class="autoplayP"><em></em></p>-->
+                </dt>
+                <dd>【王者城市赛】成都站冠军赛 DG VS GCK 第一场</dd>
+            </dl>
+            <dl>
+                <dt>
+                    <video src="img/mov_bbb.mp4" controls></video><p><em></em></p>
+                <!--<img src="img/下载 (1).jpg"><p class="autoplayP"><em></em></p>-->
+                </dt>
+                <dd>【王者城市赛】史诗级方言RAP对唱《王者Flow》</dd>
+            </dl>
+            <dl>
+                <dt>
+                    <video src="img/mov_bbb.mp4" controls></video><p><em></em></p>
+                <!--<img src="img/下载 (1).jpg"><p class="autoplayP"><em></em></p>-->
+                </dt>
+                <dd>【王者城市赛】成都站四强 DG VS YTG 第一场</dd>
+            </dl>
+        </div>
+    </div>
+        <div class="content-choose-r">
+                <div class="gongliu-r-two">
+                    <p><img src="img/王者官网.fw_r2_c2.png" alt=""/><span>英雄/皮肤</span><em>更多>></em></p>
+                    <div class="content-all-small-nav-r">
+                        <ul>
+                            <li><a href="">英雄攻略</a></li>
+                            <li><a href="">赛事精品</a></li>
+                            <li><a href="">精品栏目</a></li>
+                        </ul>
+                    </div>
+             <div class="content-choose-r-sec">
+                <div class="content-choose-r-sec-l">7-8 16:00</div>
+                <div class="content-choose-r-sec-c"><span><img src="img/phpsTEvZs_877137796_1489139248.png" alt=""/></span><p>GQhappy</p></div>
+                 <div class="content-choose-r-sec-c-vs">VS</div>
+                 <div class="content-choose-r-sec-r"><span><img src="img/王者官网.fw_r2_c0.png" alt=""/></span><p>AG超会玩</p></div>
+            </div>
+                    <div class="content-choose-r-the"><img src="img/193.jpg" alt=""/></div>
+                    <div class="content-choose-r-the"><img src="img/229441236711026.jpg" alt=""/></div>
+                    <div class="content-choose-r-the"><img src="img/887161177133135.jpg" alt=""/></div>
+
+        </div>
+    </div>
+</div>
+    <div class="content-choose-footer">
+        <div class="content-choose-footer-all">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+
+
+        <div class="footer-search" id="footer-search">
+            <input type="text" placeholder="合作媒体" id="inputSearch" /><p id="pSearch"><span><img src="img/search.jpg" alt=""/></span></p>
+            <ul class="footer-search-ul" id="footerUl">
+                <li><a href="javascript:;">腾讯视频</a></li>
+                <li><a href="javascript:;">爱奇艺</a></li>
+                <li><a href="javascript:;">优酷视频</a></li>
+                <li><a href="javascript:;">芒果TV</a></li>
+                <li><a href="javascript:;">暴风影音</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+</div>
+<div class="footer">
+    <div class="footer-con">
+        <ul class="footer-con-one">
+            <li>温馨提示：本游戏适合16岁（含）以上玩家娱乐</li>
+            <li>抵制不良游戏 拒绝盗版游戏 注意自我保护 谨防受骗上当</li>
+            <li>适度游戏益脑 沉迷游戏伤身 合理安排时间 享受健康生活</li>
+        </ul>
+        <ul class="footer-con-two">
+            <li>
+                <ol>
+                    <li>腾讯互动游戏</li>
+                    <li>服务条款</li>
+                    <li>广告服务</li>
+                    <li>腾讯游戏招聘</li>
+                    <li>腾讯游戏客服</li>
+                    <li>游戏地图</li>
+                    <li>游戏活动</li>
+                    <li>商务合作</li>
+                    <li>网站导航</li>
+                </ol>
+            </li>
+            <li><span>COPYRIGHT © 1998-2007 TENCENT.ALL RIGHTS RESERVED</span><em>腾讯公司 版权所有</em></li>
+            <li>
+                <ol>
+                    <li>粤文网[2014]0633-233号</li>
+                    <li>新出网证（粤）字010号</li>
+                    <li>文网游备字[2016]M-CSG 0059</li>
+                </ol>
+            </li>
+            <li>全国文化市场统一举报电话：12318</li>
+        </ul>
+    </div>
+</div>
+
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/swiper.js"></script>
+<script src="js/index.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+div,p,html,body,h1,h2,h3,h4,h5,h6,pre,fieldset,legend,ul,li,ol,dt,dd,dl,td,table,form{
+	margin: 0px;
+	padding: 0px;
+}
+ul,li{
+	list-style:none; 
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+i,s{
+	text-decoration: none;
+	font-style: normal;
+}
+.w{
+	width: 1210px;
+	margin: 0 auto;
+}
+.clearfix:after{
+	content: "";
+	height: 0;
+	line-height: 0;
+	display: block;
+	clear: both;
+	visibility: hidden;
+}
+.clearfix{
+	zoom:1;
+}
